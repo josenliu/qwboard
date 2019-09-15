@@ -1,0 +1,96 @@
+#ifndef CONSDEFINE_H
+#define CONSDEFINE_H
+
+#define QWBAORD_PAGE_SIZE_169   0
+#define STATUS_BAR_HEIGHT       32
+#define STATUS_BAR_STARTY       0
+
+#define MAINWIN_LIMIT_WIDTH     450
+#define MAINWIN_LIMIT_HEIGHT    420
+
+#define DRAW_BOARD_WIDTH        848
+#define DRAW_BOARD_HEIGHT       458
+
+#define LEFT_PANEL_STARTX       0
+#define LEFT_PANEL_STARTY       0
+#define LEFT_PANEL_WIDTH        42
+
+#define PANEL_BUTTON_COMMON_WIDTH   38
+#define PANEL_BUTTON_COMMON_HEIGHT  40
+#define PANEL_BUTTON_COMMON_GAP     10
+#define PANEL_BUTTON_STARTX         2
+#define PANEL_BUTTON_STARTY         5
+
+#define PAGE_VIEW_WIDTH         100
+#define PAGE_VIEW_STARTX        43
+#define PAGE_VIEW_STARTY        40
+#define PAGE_VIEW_COEF          0.12
+
+#define ADD_BUTTON_WIDTH        32
+#define ADD_BUTTON_HEIGHT       32
+
+#define PROPERTY_VIEW_WIDTH     200
+#define PROPERTY_VIEW_STARTY    40
+
+#define TOOL_BAR_STARTX         43
+#define TOOL_BAR_STARTY         0
+#define TOOL_BAR_HEIGHT         40
+
+#define BUTTONS_GAP             5
+#define SPLITTER_WIDTH          3
+#define BUTTON_COMMON_WIDTH     32
+#define PASTE_BUTTON_WIDTH      36
+#define TEXT_BUTTON_WIDTH       64
+
+#define BUTTON_COMMON_HEIGHT    32
+#define PASTE_BUTTON_HEIGHT     36
+#define TEXT_BUTTON_HEIGHT      28
+
+#define TITLEBLOCK_WIDTH_COEF   0.12
+#define TITLEBLOCK_LIMITED_WIDTH    92
+
+
+#define STATUS_BAR_INTER_GAP    16
+#define STATUS_BAR_MINUS_WIDTH  16
+#define STATUS_BAR_PLUS_WIDTH   16
+#define STATUS_BAR_SLIDER_WIDTH 170
+#define STATUS_BAR_ZOOMNUM_WIDTH    30
+#define STATUS_BAR_RIGHT_MARGIN 30
+
+#define STATUS_BAR_DRAWNAME_WIDTH   120
+
+enum opCode {
+    OP_CODE_PASTE   = 0x0000,
+    OP_CODE_CUT     = 0x0100,
+    OP_CODE_COPY    = 0x0200,
+    OP_CODE_SELECT  = 0x0300,
+    OP_CODE_TEXT    = 0x0400,
+    OP_CODE_SHAPE   = 0x0500,
+    OP_CODE_TABLE   = 0x0600,
+    OP_CODE_END     = 0x0700,
+    OP_CODE_MASK    = 0xff00
+};
+
+enum drawMode {
+    DRAW_CODE_LINE,
+    DRAW_CODE_RECT,
+    DRAW_CODE_CIRCLE,
+    DRAW_CODE_TEXT,
+    DRAW_CODE_ELLIPSE,
+    DRAW_CODE_PATH,
+    DRAW_CODE_END
+};
+
+enum drawOpraMode {
+    DRAW_OPRA_MOVE,
+    DRAW_OPRA_RESIZE,
+    DRAW_OPRA_RRESIZE,
+    DRAW_OPRA_URESIZE,
+    DRAW_OPRA_DRESIZE,
+    DRAW_OPRA_ROTATE,
+    DRAW_OPRA_NONE
+};
+
+#include <QtMath>
+
+#endif

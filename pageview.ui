@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PageView</class>
+ <widget class="QFrame" name="PageView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>100</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(200, 200, 200, 255), stop:1 rgba(240, 240, 240, 255));
+border-color: rgb(188, 188, 188);
+border: 0px solid;
+margin: 0; 
+padding: 0
+;}</string>
+  </property>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>32</y>
+     <width>100</width>
+     <height>268</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListView {
+background-color: rgba(255, 255, 255, 210);
+}</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="addButton">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>0</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton {
+background-color: transparent;
+}
+
+QToolButton:hover {
+background-color: rgba(224, 224, 224, 196);
+border: 0px;
+}
+
+QToolButton:pressed {
+background-color: rgba(135, 135, 135, 196);
+border: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/images/add.png</normaloff>:/images/add.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

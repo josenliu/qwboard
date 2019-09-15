@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DrawView</class>
+ <widget class="QGraphicsView" name="DrawView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GraphicsView</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QGraphicsView {
+border: 0px solid #202020;
+margin: 20;
+}</string>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

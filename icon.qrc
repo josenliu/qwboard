@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/user.png</file>
+        <file>images/tools.png</file>
+        <file>images/textzh.png</file>
+        <file>images/text.psd</file>
+        <file>images/text.png</file>
+        <file>images/table.png</file>
+        <file>images/share.png</file>
+        <file>images/shape.png</file>
+        <file>images/setting.png</file>
+        <file>images/return.png</file>
+        <file>images/paste.png</file>
+        <file>images/menu.png</file>
+        <file>images/interface.png</file>
+        <file>images/grab.png</file>
+        <file>images/filen.png</file>
+        <file>images/file.png</file>
+        <file>images/cut.png</file>
+        <file>images/copy.png</file>
+        <file>images/cloud.png</file>
+        <file>images/attrib.png</file>
+        <file>images/add.png</file>
+        <file>images/select.png</file>
+    </qresource>
+</RCC>
